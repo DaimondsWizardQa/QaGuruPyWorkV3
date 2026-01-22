@@ -17,6 +17,7 @@ def test_workers_are_adults():
     for worker in workers:
         assert int(worker["age"]) >= 18, f"Worker {worker['name']} младше 18 лет"
 
+check commit 1
         # workers = []
         # for user in users:
         #     if user["status"] == "worker":
