@@ -1,4 +1,3 @@
-
 from dataclasses import dataclass
 from enum import Enum
 
@@ -57,10 +56,7 @@ if __name__ == '__main__':
     oleg2 = User(name="Oleg", age=16, status=Status.student, items=["book", "pen", "paper"])
     olga = User(name="Olga", age=18, status=Status.worker, items=["book", "paper"])
 
-    olga_worker = Worker(name="Olga", age=18, items=["book", "paper"])
-
-    assert olga == olga_worker
-    # assert oleg == oleg2
+    assert oleg == oleg2
 
     assert oleg.age == 16
     assert olga.age == 18
@@ -68,3 +64,6 @@ if __name__ == '__main__':
     olga.age += 1
 
     assert olga.age == 19
+
+
+
