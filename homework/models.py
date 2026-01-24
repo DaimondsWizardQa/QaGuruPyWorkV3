@@ -65,7 +65,7 @@ class Cart:
             total += product.price * count
         return total
         raise NotImplementedError
-
+.
 def buy(self):
         for product, count in self.products.items():
          if not product.check_quantity(count):
